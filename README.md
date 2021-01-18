@@ -1,6 +1,6 @@
 # ReadMeGen
 
-![demo](Assets\UnderConstruction.png)
+![demo](Assets/UnderConstruction.png)
 
 # Technologies Used
 
