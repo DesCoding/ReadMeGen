@@ -23,8 +23,8 @@ const questions = [
 {
     type: 'list',
     message: 'What type of license do you prefer?',
-    name: 'contact',
-    choices: ['email', 'phone', 'telekinesis'],
+    name: 'Licesne',
+    choices: ['MIT - ', 'phone', 'telekinesis'],
 },
 {
     type: 'input',
@@ -65,10 +65,3 @@ inquirer.prompt(questions).then((data) => {
 // Function call to initialize app
 init();
 
-//   .then((data) => {
-//     const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
-//tenary oppertor - if then type in E6 to make dry
-//     fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-//       err ? console.log(err) : console.log('Success!')
-//     );
-//   });
