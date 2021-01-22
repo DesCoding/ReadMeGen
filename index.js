@@ -42,17 +42,17 @@ const questions = [
 {
     type: 'input',
     name: 'Contributors',
-    message: 'Who contributed to your page?',
+    message: 'Please list anyone who contributed to your page.',
 },
 {
     type: 'input',
     name: 'Test',
-    message: 'Who how was your page tested?',
+    message: 'Please describe how your page was tested.',
 },
 {
     type: 'input',
     name: 'GitHub',
-    message: 'What is your GitHub projile name?',
+    message: 'What is your GitHub profile name?',
 },
 {
     type: 'input',
