@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
-  switch (data.license) {
+  switch (data.License) {
     case "Apache license 2.0":
       return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
     case "Boost Software License 1.0":
@@ -36,19 +36,19 @@ function renderLicenseBadge(data) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
-  switch (data.license) {
+  switch (data.License) {
     case "Apache license 2.0":
-      return "[![License]](https://opensource.org/licenses/Apache-2.0)";
+      return "[![License: Apache]](https://opensource.org/licenses/Apache-2.0)";
     case "Boost Software License 1.0":
-      return "[![License]](https://www.boost.org/LICENSE_1_0.txt)";
+      return "[![License: Boost](https://www.boost.org/LICENSE_1_0.txt)";
     case 'BSD 2-clause "Simplified" license':
-      return "[![License]](https://opensource.org/licenses/BSD-2-Clause)";
+      return "[![License: BSD2]](https://opensource.org/licenses/BSD-2-Clause)";
     case "BSD 3-clause license":
-      return "[![License]](https://opensource.org/licenses/BSD-3-Clause)";
+      return "[![License:BSD3]](https://opensource.org/licenses/BSD-3-Clause)";
     case "Creative Commons Zero v1.0 Universal":
       return "[![License: CC0-1.0]](http://creativecommons.org/publicdomain/zero/1.0/)";
     case "Eclipse Public License 1.0":
-      return "[![License]](https://opensource.org/licenses/EPL-1.0)";
+      return "[![License: Exlipse]](https://opensource.org/licenses/EPL-1.0)";
     case "GNU Affero General Public License v3.0":
       return "[![License: AGPL v3]](https://www.gnu.org/licenses/agpl-3.0)";
     case "GNU General Public License v2.0":
@@ -71,7 +71,7 @@ function renderLicenseLink(data) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
-  switch (data.license) {
+  switch (data.License) {
     case "Apache license 2.0":
       return ` 
   Copyright 2021 ${data.name}
@@ -270,7 +270,8 @@ function generateMarkdown(data) {
   return `
   # ${data.Title} 
 
-  # ${data.Describe}
+  # Description
+  ${data.Describe}
 
   ## Table of Contents
     

@@ -1,9 +1,9 @@
-// Include packages needed for this application
+// Included packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const markdown = require("./utils/generateMarkdown.js");
 
-// Create an array of questions for user input
+// An array of questions for user input
 const questions = [
   {
     type: "input",
