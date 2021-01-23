@@ -15,10 +15,10 @@
   6. [License](#License)
 
   # Install 
-
-  ![demo](Assets/ReadMeGenDemo.png)
-
+  
   ![demo](Assets/ReadMeGenDemo.gif)
+  
+  ![demo](Assets/ReadMeGenDemo.png)
   
   Repo Link: https://github.com/descoding/readmegen.git 
   
