@@ -7,6 +7,11 @@ const markdown = require('./utils/generateMarkdown.js')
 const questions = [
 {
     type: 'input',
+    name: 'Title',
+    message: 'What is the title of your project?',
+},
+{
+    type: 'input',
     name: 'Describe',
     message: 'How would you describe your project?',
 },
@@ -41,7 +46,7 @@ const questions = [
 },
 {
     type: 'input',
-    name: 'Contributors',
+    name: 'Credits',
     message: 'Please list anyone who contributed to your page.',
 },
 {
