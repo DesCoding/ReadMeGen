@@ -3,31 +3,31 @@
 function renderLicenseBadge(data) {
   switch (data.License) {
     case "Apache license 2.0":
-      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
     case "Boost Software License 1.0":
-      return "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]";
     case 'BSD 2-clause "Simplified" license':
-      return "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)]";
     case "BSD 3-clause license":
-      return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
     case "Creative Commons Zero v1.0 Universal":
-      return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]";
     case "Eclipse Public License 1.0":
-      return "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-EPL%201.0-red.svg)]";
     case "GNU Affero General Public License v3.0":
-      return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)]";
     case "GNU General Public License v2.0":
-      return "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]";
     case "GNU General Public License v3.0":
-      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
     case "GNU Lesser General Public License v3.0":
-      return "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)]";
     case "MIT":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)";
     case "Mozilla Public License 2.0":
-      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]";
+      return "[License Badge](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]";
     case "The Unlicense":
-      return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]";
+      return "[License Badge](https://img.shields.io/badge/license-Unlicense-blue.svg)]";
     case "":
       return "";
   }
@@ -38,31 +38,31 @@ function renderLicenseBadge(data) {
 function renderLicenseLink(data) {
   switch (data.License) {
     case "Apache license 2.0":
-      return "[![License: Apache]](https://opensource.org/licenses/Apache-2.0)";
+      return "[License Link](https://opensource.org/licenses/Apache-2.0)";
     case "Boost Software License 1.0":
-      return "[![License: Boost](https://www.boost.org/LICENSE_1_0.txt)";
+      return "[License Link](https://www.boost.org/LICENSE_1_0.txt)";
     case 'BSD 2-clause "Simplified" license':
-      return "[![License: BSD2]](https://opensource.org/licenses/BSD-2-Clause)";
+      return "[License Link](https://opensource.org/licenses/BSD-2-Clause)";
     case "BSD 3-clause license":
-      return "[![License:BSD3]](https://opensource.org/licenses/BSD-3-Clause)";
+      return "[License Link](https://opensource.org/licenses/BSD-3-Clause)";
     case "Creative Commons Zero v1.0 Universal":
-      return "[![License: CC0-1.0]](http://creativecommons.org/publicdomain/zero/1.0/)";
+      return "[License Link](http://creativecommons.org/publicdomain/zero/1.0/)";
     case "Eclipse Public License 1.0":
-      return "[![License: Exlipse]](https://opensource.org/licenses/EPL-1.0)";
+      return "[License Link](https://opensource.org/licenses/EPL-1.0)";
     case "GNU Affero General Public License v3.0":
-      return "[![License: AGPL v3]](https://www.gnu.org/licenses/agpl-3.0)";
+      return "[License Link](https://www.gnu.org/licenses/agpl-3.0)";
     case "GNU General Public License v2.0":
-      return "[![License: GPL v2]](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+      return "[License Link](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
     case "GNU General Public License v3.0":
-      return "[![License: GPL v3]](https://www.gnu.org/licenses/gpl-3.0)";
+      return "[License Link](https://www.gnu.org/licenses/gpl-3.0)";
     case "GNU Lesser General Public License v3.0":
-      return "[![License: LGPL v3]](https://www.gnu.org/licenses/lgpl-3.0)";
+      return "[License Link](https://www.gnu.org/licenses/lgpl-3.0)";
     case "MIT":
-      return "[![License: MIT]](https://opensource.org/licenses/MIT)";
+      return "[License Link](https://opensource.org/licenses/MIT)";
     case "Mozilla Public License 2.0":
-      return "[![License: MPL 2.0]](https://opensource.org/licenses/MPL-2.0)";
+      return "[License Link](https://opensource.org/licenses/MPL-2.0)";
     case "The Unlicense":
-      return "[![License: Unlicense]](http://unlicense.org/)";
+      return "[License Link](http://unlicense.org/)";
     case "":
       return "";
   }
@@ -74,7 +74,7 @@ function renderLicenseSection(data) {
   switch (data.License) {
     case "Apache license 2.0":
       return ` 
-  Copyright 2021 ${data.name}
+  Copyright 2021 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -115,7 +115,7 @@ function renderLicenseSection(data) {
 
     case 'BSD 2-clause "Simplified" license':
       return `
-      Copyright 2021 ${data.name}
+      Copyright 2021 
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -127,7 +127,7 @@ function renderLicenseSection(data) {
       `;
     case "BSD 3-clause license":
       return `
-      Copyright 2021 ${data.name}
+      Copyright 2021
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -162,7 +162,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
 
     case "GNU Affero General Public License v3.0":
       return `
-      Copyright (C) 2021 ${data.name}
+      Copyright (C) 2021 
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as
@@ -179,7 +179,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
 
     case "GNU General Public License v2.0":
       return `
-    Copyright (C) 2021  ${data.name}
+    Copyright (C) 2021  
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License
@@ -197,7 +197,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
       `;
     case "GNU General Public License v3.0":
       return `
-      Copyright (C) 2021  ${data.name}
+      Copyright (C) 2021  
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -220,13 +220,13 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
     `;
     case "ISC":
       return `
-      Copyright 2021  ${data.name}
+      Copyright 2021  
 
   Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.`;
 
     case "MIT":
       return `
-        Copyright 2021  ${data.name}
+        Copyright 2021  
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -269,6 +269,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
 function generateMarkdown(data) {
   return `
   # ${data.Title} 
+
 
   # Description
   ${data.Describe}
