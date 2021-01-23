@@ -1,79 +1,79 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  switch(data.license){
-    case 'Apache license 2.0':
-      return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
-    case 'Boost Software License 1.0':
-      return '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]';
+function renderLicenseBadge(data) {
+  switch (data.license) {
+    case "Apache license 2.0":
+      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+    case "Boost Software License 1.0":
+      return "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]";
     case 'BSD 2-clause "Simplified" license':
-      return '[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)]';
-    case 'BSD 3-clause license':
-      return '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]';
-    case 'Creative Commons Zero v1.0 Universal':
-      return '[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]';
-    case 'Eclipse Public License 1.0':
-      return '[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)]';
-    case 'GNU Affero General Public License v3.0':
-      return '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)]';
-    case 'GNU General Public License v2.0':
-      return '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]';
-    case 'GNU General Public License v3.0':
-      return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
-    case 'GNU Lesser General Public License v3.0':
-      return '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)]';
-    case 'MIT':
-      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
-    case 'Mozilla Public License 2.0':
-      return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]';
-    case 'The Unlicense':
-      return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]';
-    case '':
-      return '';
-    }
-
+      return "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)]";
+    case "BSD 3-clause license":
+      return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
+    case "Creative Commons Zero v1.0 Universal":
+      return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]";
+    case "Eclipse Public License 1.0":
+      return "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)]";
+    case "GNU Affero General Public License v3.0":
+      return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)]";
+    case "GNU General Public License v2.0":
+      return "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]";
+    case "GNU General Public License v3.0":
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+    case "GNU Lesser General Public License v3.0":
+      return "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)]";
+    case "MIT":
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+    case "Mozilla Public License 2.0":
+      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]";
+    case "The Unlicense":
+      return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]";
+    case "":
+      return "";
+  }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  switch(data.license){
-    case 'Apache license 2.0':
-      return '[![License]](https://opensource.org/licenses/Apache-2.0)';
-    case 'Boost Software License 1.0':
-      return '[![License]](https://www.boost.org/LICENSE_1_0.txt)';
+function renderLicenseLink(data) {
+  switch (data.license) {
+    case "Apache license 2.0":
+      return "[![License]](https://opensource.org/licenses/Apache-2.0)";
+    case "Boost Software License 1.0":
+      return "[![License]](https://www.boost.org/LICENSE_1_0.txt)";
     case 'BSD 2-clause "Simplified" license':
-      return '[![License]](https://opensource.org/licenses/BSD-2-Clause)';
-    case 'BSD 3-clause license':
-      return '[![License]](https://opensource.org/licenses/BSD-3-Clause)';
-    case 'Creative Commons Zero v1.0 Universal':
-      return '[![License: CC0-1.0]](http://creativecommons.org/publicdomain/zero/1.0/)';
-    case 'Eclipse Public License 1.0':
-      return '[![License]](https://opensource.org/licenses/EPL-1.0)';
-    case 'GNU Affero General Public License v3.0':
-      return '[![License: AGPL v3]](https://www.gnu.org/licenses/agpl-3.0)';
-    case 'GNU General Public License v2.0':
-      return '[![License: GPL v2]](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)';
-    case 'GNU General Public License v3.0':
-      return '[![License: GPL v3]](https://www.gnu.org/licenses/gpl-3.0)';
-    case 'GNU Lesser General Public License v3.0':
-      return '[![License: LGPL v3]](https://www.gnu.org/licenses/lgpl-3.0)';
-    case 'MIT':
-      return '[![License: MIT]](https://opensource.org/licenses/MIT)';
-    case 'Mozilla Public License 2.0':
-      return '[![License: MPL 2.0]](https://opensource.org/licenses/MPL-2.0)';
-    case 'The Unlicense':
-      return '[![License: Unlicense]](http://unlicense.org/)';
-    case '':
-      return '';
+      return "[![License]](https://opensource.org/licenses/BSD-2-Clause)";
+    case "BSD 3-clause license":
+      return "[![License]](https://opensource.org/licenses/BSD-3-Clause)";
+    case "Creative Commons Zero v1.0 Universal":
+      return "[![License: CC0-1.0]](http://creativecommons.org/publicdomain/zero/1.0/)";
+    case "Eclipse Public License 1.0":
+      return "[![License]](https://opensource.org/licenses/EPL-1.0)";
+    case "GNU Affero General Public License v3.0":
+      return "[![License: AGPL v3]](https://www.gnu.org/licenses/agpl-3.0)";
+    case "GNU General Public License v2.0":
+      return "[![License: GPL v2]](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+    case "GNU General Public License v3.0":
+      return "[![License: GPL v3]](https://www.gnu.org/licenses/gpl-3.0)";
+    case "GNU Lesser General Public License v3.0":
+      return "[![License: LGPL v3]](https://www.gnu.org/licenses/lgpl-3.0)";
+    case "MIT":
+      return "[![License: MIT]](https://opensource.org/licenses/MIT)";
+    case "Mozilla Public License 2.0":
+      return "[![License: MPL 2.0]](https://opensource.org/licenses/MPL-2.0)";
+    case "The Unlicense":
+      return "[![License: Unlicense]](http://unlicense.org/)";
+    case "":
+      return "";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  switch(data.license){
-    case 'Apache license 2.0':
-        return ` 
+function renderLicenseSection(data) {
+  switch (data.license) {
+    case "Apache license 2.0":
+      return ` 
   Copyright 2021 ${data.name}
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -87,7 +87,7 @@ function renderLicenseSection(license) {
   See the License for the specific language governing permissions and
   limitations under the License.
         `;
-    case 'Boost Software License 1.0':
+    case "Boost Software License 1.0":
       return `
   Boost Software License - Version 1.0 - August 17th, 2003
 
@@ -125,7 +125,7 @@ function renderLicenseSection(license) {
 
   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       `;
-    case 'BSD 3-clause license':
+    case "BSD 3-clause license":
       return `
       Copyright 2021 ${data.name}
 
@@ -139,14 +139,14 @@ function renderLicenseSection(license) {
 
   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           `;
-    case 'Creative Commons Zero v1.0 Universal':
+    case "Creative Commons Zero v1.0 Universal":
       return `
       No Copyright
   The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
 
   You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
         `;
-    case 'Creative Commons Attribution 4.0':
+    case "Creative Commons Attribution 4.0":
       return `
       You are free to:
   Share — copy and redistribute the material in any medium or format
@@ -154,13 +154,13 @@ function renderLicenseSection(license) {
   for any purpose, even commercially.
         `;
 
-    case 'Eclipse Public License 1.0':
+    case "Eclipse Public License 1.0":
       return `
       Eclipse Public License, Version 1.0 (EPL-1.0)
 THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
         `;
-    
-    case 'GNU Affero General Public License v3.0':
+
+    case "GNU Affero General Public License v3.0":
       return `
       Copyright (C) 2021 ${data.name}
 
@@ -176,9 +176,9 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
 
   You should have received a copy of the GNU Affero General Public License
   along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
-    
-    case 'GNU General Public License v2.0':
-    return `
+
+    case "GNU General Public License v2.0":
+      return `
     Copyright (C) 2021  ${data.name}
 
   This program is free software; you can redistribute it and/or
@@ -195,7 +195,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
   along with this program; if not, write to the Free Software
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       `;
-    case 'GNU General Public License v3.0':
+    case "GNU General Public License v3.0":
       return `
       Copyright (C) 2021  ${data.name}
 
@@ -213,30 +213,30 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
     `;
 
-    case 'GNU Lesser General Public License v3.0':
+    case "GNU Lesser General Public License v3.0":
       return `
   Licenced under GNU Lesser General Public License v3.0 
   Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
     `;
-    case 'ISC':
+    case "ISC":
       return `
       Copyright 2021  ${data.name}
 
   Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.`;
-    
-    case 'MIT':
-        return `
+
+    case "MIT":
+      return `
         Copyright 2021  ${data.name}
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     `;
-    case 'Mozilla Public License 2.0':
-        return `This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.`;
-    
-    case 'The Unlicense':
-        return `
+    case "Mozilla Public License 2.0":
+      return `This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.`;
+
+    case "The Unlicense":
+      return `
   This is free and unencumbered software released into the public domain.
 
   Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -262,7 +262,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
 
   For more information, please refer to <http://unlicense.org/>
   `;
-}
+  }
 }
 
 // TODO: Create a function to generate markdown for README
