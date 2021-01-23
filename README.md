@@ -3,7 +3,7 @@
   # never ending
   # blahblah
   # node initiated
-  # undefined
+  # license
   # me
   # node
   # descoding

@@ -28,7 +28,7 @@ const questions = [
 {
     type: 'list',
     message: 'Please select the license you would like to add to your README.',
-    name: 'Licesne',
+    name: 'License',
     choices: [
     'Apache license 2.0',
     'Boost Software License 1.0',

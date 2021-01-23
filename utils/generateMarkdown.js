@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
+function renderLicenseBadge(license) {
   switch(data.license){
     case 'Apache license 2.0':
       return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
@@ -36,7 +36,7 @@ function renderLicenseBadge(data) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(data) {
+function renderLicenseLink(license) {
   switch(data.license){
     case 'Apache license 2.0':
       return '[![License]](https://opensource.org/licenses/Apache-2.0)';
@@ -70,7 +70,7 @@ function renderLicenseLink(data) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(data) {
+function renderLicenseSection(license) {
   switch(data.license){
     case 'Apache license 2.0':
         return ` 
