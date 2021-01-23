@@ -15,14 +15,17 @@
 
   # Install 
   ![demo](Assets/ReadMeGenDemo.png)
+
   ![demo](Assets/ReadMeGenDemo.webm)
+
   [repo link](https://github.com/descoding/readmegen)
+
   [video link](https://drive.google.com/file/d/1s9q89yy77PopL_zvtELeXIzpmJcc9Q2-/view)
   
  
 
   # Usage
-  Clients would open their project folder in terminal and enter node index.js in the terminal command line.
+  To use, clients would open their project folder in terminal and enter node index.js in the terminal command line.
 
   # Credits
   Desiree Stout
@@ -37,7 +40,7 @@
 
   # License
     MIT  
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+    [License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
     
         Copyright 2021  undefined
 
